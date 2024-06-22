@@ -1,7 +1,7 @@
 <?php
 // ////////////////////////////////// Enqueue stylesheet ///////////////////////////// //	
 function add_theme_style() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '../css/main.scss',false,'1.1','all');
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css', array(),'1.1','all');
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_style' );
 
